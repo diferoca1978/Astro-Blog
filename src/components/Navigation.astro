@@ -1,8 +1,10 @@
 ---
 import '../styles/global.css';
+import { ViewTransitions } from 'astro:transitions';
 ---
 
-<div class="nav-links">
+<ViewTransitions />
+<div class="nav-links" transition:animate="slide">
   <a href="/">Home</a>
   <a href="/about/">About</a>
   <a href="/blog/">Blog</a>
